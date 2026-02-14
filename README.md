@@ -78,8 +78,8 @@ To run this project locally on your **Mac Air M4** (or any other machine), follo
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/SiddharthPande/99acres-clone-react.git
-cd learn-react
+git clone https://https://github.com/siddharth-stn/99AcresClone
+cd 99AcresClone
 
 ```
 
