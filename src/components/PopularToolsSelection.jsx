@@ -8,7 +8,7 @@ const cardsData = [{ title: "Budget Calculator ->", para: "Check your affordabil
 { title: "Area Converter ->", para: "Convert one area into other easily", image: plusMinus }];
 
 const styles = {
-  outerDivStyle: "popularCard p-4 px-3 min-w-49 bg-white flex flex-col rounded-xl",
+  outerDivStyle: "popularCard p-4 px-3 min-w-49 max-w-49 bg-white flex flex-col rounded-xl",
   figureStyle: "rounded-[50%] w-15 h-15  bg-[#FFFBF3] grid place-items-center self-center",
   imageStyle: "w-[50%]",
   titleStyle: "font-bold text-[14px] pt-4",
@@ -41,7 +41,7 @@ const PopularToolsSelection = () => {
           >
         </div>
       </div>
-      <div className="tools-cards flex overflow-x-auto scrollbar-hide ps-5 pt-8 pb-6 gap-4">
+      <div className="tools-cards flex overflow-x-auto scrollbar-hide ps-5 pe-4 pt-8 pb-6 gap-4">
         {cardsData.map((cardData, index) => {
           return (
             <Card key={index} image={cardData.image} title={cardData.title} para={cardData.para} styles={styles} />
