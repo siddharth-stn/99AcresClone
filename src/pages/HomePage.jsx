@@ -1,8 +1,9 @@
 import "../styles/HomePage.css";
-import Header from "../components/Header"
-import HeroSection from "../components/HeroSection"
-import GetStartedSection from "../components/GetStartedSection"
-import PopularToolsSelection from "../components/PopularToolsSelection"
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import GetStartedSection from "../components/GetStartedSection";
+import PopularToolsSelection from "../components/PopularToolsSelection";
+import BuyHome from "../components/BuyHome";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
         <HeroSection />
         <GetStartedSection />
         <PopularToolsSelection />
+        <BuyHome />
       </div>
       { /*END Outer Wrapper*/}
     </div>
