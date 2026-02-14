@@ -1,0 +1,15 @@
+.bg-badge-gradient {
+  background-size: 200% 200% !important;
+  background: linear-gradient(135deg, #047857 50%, white 53%, #047857 58%);
+  animation: animateShine 2s linear infinite alternate;
+}
+
+@keyframes animateShine {
+  0% {
+    background-position: 160% 50%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
