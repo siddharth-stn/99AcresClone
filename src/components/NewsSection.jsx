@@ -44,8 +44,6 @@ const NewsSection = () => {
     ]
   }
 
-
-
   const styles = {
     outerDivStyle: "border border-gray-400 rounded-2xl flex flex-col overflow-hidden ps-[110px] max-w-[288px] flex-shrink-0 flex-grow-0 relative pe-2 ",
     figureStyle: "absolute left-0 bottom-0 top-0 h-[94px] w-[35%]",

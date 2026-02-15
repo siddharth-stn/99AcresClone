@@ -1,7 +1,26 @@
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import heroImage from "../assets/images/hero.webp";
 
+const placeholderTexts = ['Search "Ats Pristine"', 'Search "New Projects in Noida"', 'Search "Sector 150 Noida"', 'Search "3 BHK Flats in Noida"'];
+
 export default function HeroSection() {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        if (prevIndex === placeholderTexts.length - 1) {
+          return 0;
+        } else {
+          return prevIndex + 1;
+        }
+      });
+    }, 3000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <section>
@@ -24,7 +43,7 @@ export default function HeroSection() {
           <input
             id="search-input"
             type="text"
-            placeholder="Search"
+            placeholder={placeholderTexts[currentIndex]}
             className="placeholder-[rgba(1,12,31,1.00)] outline-none w-full"
           />
         </div>
