@@ -16,7 +16,7 @@ const BuyHome = () => {
           <span className="text-[#8993A4] text-[12px]">Over 778,000 properties and 187,000 projects</span>
         </div>
         <hr />
-        <div className="flex items-align my-10">
+        <div className="flex items-align my-8">
           <figure className="w-10">
             <img src="https://static.99acres.com/universalhp/img/BookRead.shared.png" alt="Book Read" />
           </figure>
